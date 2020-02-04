@@ -1,99 +1,162 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
-        </a>
-        <ul>
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
-          <li>Магазин</li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-          <a href="basket.html">Корзина</a>
-      </nav>
-    </header>
-    <main>
-        <h1>Магазин готовых шаблонов</h1>
-        <section>
-          <h2>Фильтр шаблонов</h2>
-          <!-- Здесь будет форма -->
-          <button type="submit">Показать</button>
-        </section>
-        <section>
-          <h3>Список шаблонов</h3>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
+      </a>
+      <ul>
+        <li><a href="studio.html">Студия</a></li>
+        <li><a href="clients.html">Клиенты</a></li>
+        <li>Магазин</li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <a href="basket.html">Корзина</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Магазин готовых шаблонов</h1>
+    <section>
+      <h2>Фильтр шаблонов</h2>
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Сетка:</legend>
           <ul>
             <li>
-              <h3><a href="#">Sedona</a></h3>
-              <a href="catalog-item.html">
-                <img src="img/product-1.jpg" width="360" height="576" alt="Sedona">
-              </a>
-              <div>
-                <p>
-                  Информационный сайт<br>
-                  для туристов
-                </p>
-                <p>
-                  <button type=button>9 900 руб.</button>
-                  </p>
-                </div>
-              </li>
-              <li>
+              <label><input type="radio" name="grid-type" value="filter-slider">Слайдер</label>
+            </li>
+            <li>
+              <label><input type="radio" name="grid-type" value="filter-fixed">Фиксированная</label>
+            </li>
+            <li>
+              <label><input type="radio" name="grid-type" value="filter-stretch">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
+              <label for="filter-baxter-of-california">Слайдер</label>
+            </li>
+            <li>
+              <input type="checkbox" name="advantages" id="filter-advantages">
+              <label for="filter-advantages">Блок преимуществ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="news" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" name="gallery" id="filter-gallery">
+              <label for="filter-gallery">Галерея</label>
+            </li>
+            <li>
+              <input type="checkbox" name="busket" id="filter-busket">
+              <label for="filter-busket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+    </section>
+    <section>
+      <h3>Список шаблонов</h3>
+      <ul>
+        <li>
+          <h3><a href="#">Sedona</a></h3>
+          <a href="catalog-item.html">
+            <img src="img/product-1.jpg" width="360" height="576" alt="Sedona">
+          </a>
+          <div>
+            <p>
+              Информационный сайт<br>
+              для туристов
+            </p>
+            <p>
+              <button type=button>9 900 руб.</button>
+            </p>
+          </div>
+        </li>
+        <li>
           <h3><a href="#">Pink</a></h3>
-              <a href="catalog-item.html">
-                <img src="img/product-2.jpg" width="360" height="576" alt="Pink">
-              </a>
-          </li>
-          <li>
+          <a href="catalog-item.html">
+            <img src="img/product-2.jpg" width="360" height="576" alt="Pink">
+          </a>
+        </li>
+        <li>
           <h3><a href="#">Borodinski</a></h3>
-              <a href="catalog-item.html">
-                <img src="img/product-3.jpg" width="360" height="576" alt="Borodinski">
-              </a>
-          </li>
-          <li>
+          <a href="catalog-item.html">
+            <img src="img/product-3.jpg" width="360" height="576" alt="Borodinski">
+          </a>
+        </li>
+        <li>
           <h3><a href="#">misaka</a></h3>
-              <a href="catalog-item.html">
-                <img src="img/product-4.jpg" width="360" height="576" alt="misaka">
-              </a>
-          </li>
-          <li>
+          <a href="catalog-item.html">
+            <img src="img/product-4.jpg" width="360" height="576" alt="misaka">
+          </a>
+        </li>
+        <li>
           <h3><a href="#">А+</a></h3>
-              <a href="catalog-item.html">
-                <img src="img/product-5.jpg" width="360" height="576" alt="А+">
-              </a>
-          </li>
-          <li>
+          <a href="catalog-item.html">
+            <img src="img/product-5.jpg" width="360" height="576" alt="А+">
+          </a>
+        </li>
+        <li>
           <h3><a href="#">Кваст</a></h3>
-              <a href="catalog-item.html">
-                <img src="img/product-6.jpg" width="360" height="576" alt="Кваст">
-              </a>
-          </li>
-        </ul>
+          <a href="catalog-item.html">
+            <img src="img/product-6.jpg" width="360" height="576" alt="Кваст">
+          </a>
+        </li>
+      </ul>
 
-          <ul>
-            <li><a>1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">Следующая</a></li>
-          </ul>
-        </section>
-      </main>
-      <footer>
-        <div>
-          <ul>
-            <li><a href="">Вконтакте</a></li>
-            <li><a href="">Фейсбук</a></li>
-            <li><a href="">Инстаграм</a></li>
-          </ul>
-          <p>Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-      </footer>
-    </body>
-    </html>
+      <ul>
+        <li><a>1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">Следующая</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <ul>
+        <li><a href="">Вконтакте</a></li>
+        <li><a href="">Фейсбук</a></li>
+        <li><a href="">Инстаграм</a></li>
+      </ul>
+      <p>Давайте дружить, это выгодно!</p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </footer>
+  <section>
+    <h2>Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="name-contact">Ваше имя:</label>
+        <input id="name-contact" type="text" name="name" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="email-contact">Ваш e-mail:</label>
+        <input id="email-contact" type="email" name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="letter-contact">Текст письма:</label>
+        <textarea id="letter-contact" name="letter" placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="submit">
+        Отправить
+      </button>
+    </form>
+    <button type="button">
+      Закрыть
+    </button>
+  </section>
+</body>
+</html>
